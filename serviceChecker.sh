@@ -594,3 +594,46 @@ if [[ $HELP ]];
 	then
 	advHELP
 fi		
+
+# Add this to your .zshrc file
+## Create completion Function
+#function tab-completion-servicechecker() {
+#    local -a options
+#    local state
+#
+#    # Define serviceChecker options
+#    options=(
+#        '(-h)-h[display help information]'
+#        '-H-[help with usage for all features]:feature:(http ffuf smb ldap smtp snmp ftp rpc nfs vhosts)'
+#        '-H-ffuf[Use ffuf on the hosts that returned a status code of 200]'
+#        '-H-smb[Scanning for smb anonymous access and listing shares]'
+#        '-H-ldap[Scanning for anonyous bind]'
+#        '-H-smtp[Connect to smtp server and send innocuous email]'
+#        '-H-ftp[Connect to ftp server with anonymous access]'
+#        '-H-rpc[Enumerate RPC services]'
+#        '-H-nfs[Connect and enumerate NFS]'
+#        '-H-vhosts[Search for virtual hosts (subdomains) on the provided domain]'
+#        '-f[file containing IPs, domain names, service account names]:file:_files'
+#        '-w[write results to file]:output file:_files'
+#        '-D[specify domain name]:domain name:_domains'
+#        '-C[specify domain controller IP]:domain controller IP:_hosts'
+#        '-T-asrep[test for Kerberos pre-authentication (ASREPRoasting attack)]'
+#        '-S-smb[scanning for SMB anonymous access and listing shares]'
+#        '-S-http[curl the website and return those with a status code of 200]'
+#        '-S-ffuf[use ffuf on the hosts that returned a status code of 200]'
+#        '-S-ldap[scanning for anonymous bind]'
+#        '-S-smtp[connect to SMTP server and send innocuous email]'
+#        '-S-snmp[connect to SNMP device and dump information]'
+#        '-S-ftp[connect to FTP server with anonymous access]'
+#        '-S-rpc[enumerate RPC services]'
+#        '-S-nfs[connect and enumerate NFS]'
+#        '-S-vhosts[Search for virtual hosts (subdomains)]'
+#    )
+#
+#    # Place options into array for parsing
+#    _arguments -s $options[@]
+#}
+#
+## Bundle everything together
+#compdef tab-completion-servicechecker serviceChecker.sh
+
